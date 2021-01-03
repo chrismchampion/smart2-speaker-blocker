@@ -18,7 +18,7 @@ Develop a smart filter to give users more control over speech data sent over the
 3. Time-based keyword mode – No information relayed to Alexa for a predetermined amount of time when keyword is heard. Example: halt system for a minute when expletives identified or “I hate...” (example - “I hate my wife” →Interaction relayed to and stored by Amazon → unwanted Amazon divorce book recommendation).
 4. Argument mode – Privacy mode automatically activated when a certain dB is reached.
 
-## Additional Points:
+## Additional Points
 * Hardware vs. software mute buttons – s/w mute can be bypassed with malicious software (appears to be active but still sending data in the background)
 * Other devices on the market and vulnerabilities – Facebook Portal
 * Privacy Vulnerabilities of Encrypted IoT Traffic
