@@ -21,7 +21,11 @@ System relays all phrases to Alexa as long as they do not contain sensitive keyw
 No information relayed to Alexa when activated.
 
 ### Time-based keyword mode
-No information relayed to Alexa for a predetermined amount of time when keyword is heard. Example: halt system for a minute when expletives identified or “I hate...” (example - “I hate you!” →Interaction relayed to and stored by Amazon → unwanted Amazon divorce book recommendation).
+No information relayed to Alexa for a predetermined amount of time after keyword is heard. Example for use case:
+> System recognizes keyword "I hate" in phrase "I hate <my mother-in-law>".
+> System immediately stops relaying audio to Alexa, thus redacting information <my mother-in-law>.
+> Such information could potentially be stored by Amazon and used for (unwanted) product
+> recommendations, e.g. family therapy self-help book.
 
 ### Argument mode
 Privacy mode automatically activated when a certain dB is reached.
