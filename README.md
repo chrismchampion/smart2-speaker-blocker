@@ -13,10 +13,17 @@ Develop a smart filter to give users more control over speech data sent over the
   * Simple Google™ TTS (with pico2wave offline speech synthesis back-end)
 
 ## Smart^2 Usage Modes
-1. Normal operation/keyword evaluation mode – System relays all phrases to Alexa as long as they do not contain sensitive keywords, e.g., finance/security-related: password, pin, pin number, bank account, loan.
-2. Total privacy mode (voice activated) – No information relayed to Alexa when activated
-3. Time-based keyword mode – No information relayed to Alexa for a predetermined amount of time when keyword is heard. Example: halt system for a minute when expletives identified or “I hate...” (example - “I hate my wife” →Interaction relayed to and stored by Amazon → unwanted Amazon divorce book recommendation).
-4. Argument mode – Privacy mode automatically activated when a certain dB is reached.
+### Normal operation/keyword evaluation mode
+System relays all phrases to Alexa as long as they do not contain sensitive keywords, e.g., finance/security-related: password, pin, pin number, bank account, loan.
+
+### Total privacy mode (voice activated)
+No information relayed to Alexa when activated
+
+### Time-based keyword mode
+No information relayed to Alexa for a predetermined amount of time when keyword is heard. Example: halt system for a minute when expletives identified or “I hate...” (example - “I hate my wife” →Interaction relayed to and stored by Amazon → unwanted Amazon divorce book recommendation).
+
+### Argument mode
+Privacy mode automatically activated when a certain dB is reached.
 
 ## Additional Points
 * Hardware vs. software mute buttons – s/w mute can be bypassed with malicious software (appears to be active but still sending data in the background)
