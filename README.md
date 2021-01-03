@@ -14,9 +14,8 @@ Develop a smart filter to give users more control over speech data sent over the
 
 ## Smart^2 Usage Modes
 ### Normal operation/keyword evaluation mode
-System relays all phrases to Alexa as long as they do not contain sensitive keywords, e.g. finance or security-related keywords.
-Examples:
-'''"password", "pin", "pin number", "bank account", "loan"'''
+System relays all phrases to Alexa as long as they do not contain sensitive keywords, e.g. finance or security-related keywords. Examples:
+> "password", "pin", "pin number", "bank account", "loan"
 
 ### Total privacy mode (voice activated)
 No information relayed to Alexa when activated.
