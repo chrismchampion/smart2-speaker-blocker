@@ -5,7 +5,6 @@
 - Time recorded in milliseconds (timestamp in ms, e.g. 5000).
 - Future improvement to latency: Another thread for recording Alexa.
 
-##### Processing time
 ![Smart^2 processing time](/img/proc-time-table.png?raw=true "Smart^2 processing time table")
 
 ### Test 1: "How is the weather?"
