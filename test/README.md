@@ -37,6 +37,5 @@ Alexa | Smart^2
 
 Difference of ca. 3.78s
 
-The processing time of Smart2 is roughly 3-4 seconds...
-Roughly the same time Alexa needs to process req. and respond.
-Potential to improve latency by recording Alexa in a concurrently running thread.
+> The processing time of Smart2 is roughly 3-4 seconds. Roughly the same time Alexa needs to process a request and respond.
+> Potential to improve latency exists by recording Alexa in a concurrently running thread.
