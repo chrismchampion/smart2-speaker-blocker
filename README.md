@@ -54,3 +54,6 @@ Privacy mode automatically activated when a preset decibel (dB) value is reached
 * Amazon stores recordings of past interactions; must be deleted manually: data collection details a profile of your lifestyle (interesting for marketers and cybercriminals who could obtain access with username/password obtained via security breaches (AWS, FB, etc.).
 * Amazon Terms of Service: Amazon can use all captured data.
 * Amazon Echo said to have analog hardware mute button that cuts of circuit flow to microphone. LED state tied electrically to the mic (same circuit).
+
+## Publication (Preprint)
+[ArXiv](https://arxiv.org/abs/1901.04879)
