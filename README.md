@@ -4,9 +4,9 @@
 Develop a smart filter to give users more control over speech data sent over the network, ensuring privacy in their home.
 
 ## Design
-![Smart^2 components diagram](/img/design.png?raw=true "Smart^2 components diagram")
 
-## Implementation
+![Smart^2 design](/img/fig1-design.png?raw=true "Smart^2 design diagram")
+> Fig. 1. The microphone of the smart speaker is insulated from external sounds, and can only hear sounds forwarded by the smart speaker blocker.
 
 ### Resources Used
 * Off-the-shelf Mini-ITX PC
@@ -17,6 +17,14 @@ Develop a smart filter to give users more control over speech data sent over the
   * CMU (Carnegie Mellon University) PocketSphinx
   * PyPi SpeechRecognition library
   * Simple Google™ TTS (with pico2wave offline speech synthesis back-end)
+
+![Smart^2 components](/img/fig2-components.png?raw=true "Smart^2 components diagram")
+> Fig. 2. Audio data comes in from the microphone and is converted to text by the speech-to-text engine. Text and audio is both passed to the filtering engine, which decides whether or not to play the audio back for the smart speaker.
+
+## Implementation
+
+![Smart^2 implementation](/img/fig2-components.png?raw=true "Smart^2 implementation diagram")
+> Fig. 3. Our test setup consists of the Smart2 along with a separate networked computer which records both the raw audio and the output from the Smart2. Both sets of audio recordings were transcribed using the online Google speech-to-text API, and compared.
 
 ### Smart^2 Usage Modes
 #### Normal operation/keyword evaluation mode
