@@ -6,8 +6,9 @@
 - Future improvement to latency: Another thread for recording Alexa.
 
 ### Test 1: "How is the weather?"
-Alexa: ca. 1.8 - 2.10s + 8 sec for response
-Smart2: ca. 6.5s
+Alexa | Smart2
+----- | -----
+ca. 1.8 - 2.10s + 8 sec for response | ca. 6.5s
 > Difference of ca. 4.40 - 4.70 s
 4.4/9.8 = 0.449
 4.7/10.1 = 0.4653
