@@ -23,9 +23,6 @@ Develop a smart filter to give users more control over speech data sent over the
 
 ## Implementation
 
-![Smart^2 implementation](/img/fig2-components.png?raw=true "Smart^2 implementation diagram")
-> Fig. 3. Our test setup consists of the Smart2 along with a separate networked computer which records both the raw audio and the output from the Smart2. Both sets of audio recordings were transcribed using the online Google speech-to-text API, and compared.
-
 ### Smart^2 Usage Modes
 #### Normal operation/keyword evaluation mode
 System relays all phrases to Alexa as long as they do not contain sensitive keywords, e.g. finance or security-related keywords. Examples:
@@ -42,6 +39,9 @@ No information relayed to Alexa for a predetermined amount of time after keyword
 
 #### Argument mode
 Privacy mode automatically activated when a preset decibel (dB) value is reached.
+
+![Smart^2 implementation](/img/fig2-components.png?raw=true "Smart^2 implementation diagram")
+> Fig. 3. Our test setup consists of the Smart2 along with a separate networked computer which records both the raw audio and the output from the Smart2. Both sets of audio recordings were transcribed using the online Google speech-to-text API, and compared.
 
 ## Additional Points
 * Hardware vs. software mute buttons: software mute can be bypassed with malware (microphone appears to be deactivated but still sending data in the background).
