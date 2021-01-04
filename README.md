@@ -18,6 +18,7 @@ Develop a smart filter to give users more control over speech data sent over the
   * PyPi SpeechRecognition library
   * Simple Google™ TTS (with pico2wave offline speech synthesis back-end)
 
+#### Components diagram
 ![Smart^2 components](/img/fig2-components.png?raw=true "Smart^2 components diagram")
 > Fig. 2. Audio data comes in from the microphone and is converted to text by the speech-to-text engine. Text and audio is both passed to the filtering engine, which decides whether or not to play the audio back for the smart speaker.
 
