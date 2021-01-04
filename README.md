@@ -18,27 +18,27 @@ Develop a smart filter to give users more control over speech data sent over the
   * PyPi SpeechRecognition library
   * Simple Google™ TTS (with pico2wave offline speech synthesis back-end)
 
-#### Components diagram
+##### Components diagram
 ![Smart^2 components](/img/fig2-components.png?raw=true "Smart^2 components diagram")
 > Fig. 2. Audio data comes in from the microphone and is converted to text by the speech-to-text engine. Text and audio is both passed to the filtering engine, which decides whether or not to play the audio back for the smart speaker.
 
 ## Implementation
 
 ### Smart^2 Usage Modes
-#### Normal operation/keyword evaluation mode
+##### Normal operation/keyword evaluation mode
 System relays all phrases to Alexa as long as they do not contain sensitive keywords, e.g. finance or security-related keywords. Examples:
 > "password", "pin", "pin number", "bank account", "loan"
 
-#### Total privacy mode (voice activated)
+##### Total privacy mode (voice activated)
 No information relayed to Alexa when activated.
 
-#### Time-based keyword mode
+##### Time-based keyword mode
 No information relayed to Alexa for a predetermined amount of time after keyword/phrase is recognized. Example for use case:
 > 1. System recognizes key-phrase "I hate" in spoken sentence "I hate my mother-in-law".
 > 2. System immediately stops relaying audio to Alexa for 30 seconds, thus redacting information "my mother-in-law".
 > 3. Such information could potentially be stored by Amazon and used for (unwanted) product recommendations, e.g. family therapy self-help book.
 
-#### Argument mode
+##### Argument mode
 Privacy mode automatically activated when a preset decibel (dB) value is reached.
 
 ![Smart^2 implementation](/img/fig2-components.png?raw=true "Smart^2 implementation diagram")
