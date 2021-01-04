@@ -1,5 +1,11 @@
 # Smart^2 Speaker Blocker
 
+## Publication (Preprint)
+
+###### arXiv.org > Computer Science > Cryptography and Security
+
+[The Smart^2 Speaker Blocker: An Open-Source Privacy Filter for Connected Home Speakers](https://arxiv.org/abs/1901.04879)
+
 ## Project Goal
 Develop a smart filter to give users more control over speech data sent over the network, ensuring privacy in their home.
 
@@ -54,9 +60,3 @@ Privacy mode automatically activated when a preset decibel (dB) value is reached
 * Amazon stores recordings of past interactions; must be deleted manually: data collection details a profile of your lifestyle (interesting for marketers and cybercriminals who could obtain access with username/password obtained via security breaches (AWS, FB, etc.).
 * Amazon Terms of Service: Amazon can use all captured data.
 * Amazon Echo said to have analog hardware mute button that cuts of circuit flow to microphone. LED state tied electrically to the mic (same circuit).
-
-## Publication (Preprint)
-
-###### arXiv.org > Computer Science > Cryptography and Security
-
-[The Smart^2 Speaker Blocker: An Open-Source Privacy Filter for Connected Home Speakers](https://arxiv.org/abs/1901.04879)
