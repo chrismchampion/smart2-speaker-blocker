@@ -17,19 +17,25 @@ Difference of ca. 4.40 - 4.70 s
 **Smart2 adds 45%-46.5% overhead.**
 
 ### Test 2: "Play CNN news."
-Alexa: ca. 2.5-3.0s until Alexa replies
-Smart2: ca. 6.45s
-> Difference of ca. 3.45 - 3.95
+Alexa | Smart^2
+----- | -----
+ca. 2.5-3.0s until Alexa replies | ca. 6.45s
+
+Difference of ca. 3.45 - 3.95 s
 
 ### Test 3: "Tell me a joke."
-Alexa: ca. 1.7s
-Smart2: ca. 6.8s
-> Difference of ca. 5.10s
+Alexa | Smart^2
+----- | -----
+ca. 1.7s | ca. 6.8s
+
+Difference of ca. 5.10s
 
 ### Test 4: "What's 5+5?"
-Alexa: 3.68
-Smart2: 7.46
-> Difference of ca. 3.78s
+Alexa | Smart^2
+----- | -----
+3.68 | 7.46
+
+Difference of ca. 3.78s
 
 The processing time of Smart2 is roughly 3-4 seconds...
 Roughly the same time Alexa needs to process req. and respond.
