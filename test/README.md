@@ -13,6 +13,7 @@ ca. 1.8 - 2.10s + 8 sec for response | ca. 6.5s
 Difference of ca. 4.40 - 4.70 s
 * 4.4/9.8 = 0.449
 * 4.7/10.1 = 0.4653
+
 **Smart2 adds 45%-46.5% overhead.**
 
 ### Test 2: "Play CNN news."
