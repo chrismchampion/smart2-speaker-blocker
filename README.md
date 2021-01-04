@@ -4,12 +4,13 @@
 Develop a smart filter to give users more control over speech data sent over the network, ensuring privacy in their home.
 
 ## Resources Used
-* Mini-ITX PC w/ Ubuntu
-* Ext. microphone and Bluetooth speaker
-* Amazon Echo Dot
-* Open-source software
+* Off-the-shelf Mini-ITX PC
+* Off-the-shelf external USB microphone and Bluetooth speaker
+* Amazon Echo Dot (2nd Generation)
+* Open-source software:
+  * Ubuntu 16.04 LTS
+  * CMU (Carnegie Mellon University) PocketSphinx
   * PyPi SpeechRecognition library
-  * CMU PocketSphinx
   * Simple Google™ TTS (with pico2wave offline speech synthesis back-end)
 
 ## Smart^2 Usage Modes
@@ -27,12 +28,12 @@ No information relayed to Alexa for a predetermined amount of time after keyword
 > 3. Such information could potentially be stored by Amazon and used for (unwanted) product recommendations, e.g. family therapy self-help book.
 
 ### Argument mode
-Privacy mode automatically activated when a certain dB is reached.
+Privacy mode automatically activated when a preset decibel (dB) value is reached.
 
 ## Additional Points
-* Hardware vs. software mute buttons – s/w mute can be bypassed with malicious software (appears to be active but still sending data in the background)
-* Other devices on the market and vulnerabilities – Facebook Portal
-* Privacy Vulnerabilities of Encrypted IoT Traffic
-* Amazon stores recordings of past interactions; must be deleted manually – data collection details a profile of your lifestyle (interesting for marketers and cybercriminals who could obtain access with username/password obtained via security breaches (AWS, FB, etc.).
-* Amazon Terms of Service – Amazon can use all captured data.
-* Amazon Echo said to have analog h/w mute button that cuts of circuit flow to the mic. LED state tied electrically to the mic (same circuit).
+* Hardware vs. software mute buttons: software mute can be bypassed with malware (microphone appears to be deactivated but still sending data in the background).
+* Other devices on the market, e.g. Google Home, Facebook Portal, are susceptible to vulnerabilities.
+* Privacy Vulnerabilities of Encrypted IoT Traffic.
+* Amazon stores recordings of past interactions; must be deleted manually: data collection details a profile of your lifestyle (interesting for marketers and cybercriminals who could obtain access with username/password obtained via security breaches (AWS, FB, etc.).
+* Amazon Terms of Service: Amazon can use all captured data.
+* Amazon Echo said to have analog hardware mute button that cuts of circuit flow to microphone. LED state tied electrically to the mic (same circuit).
