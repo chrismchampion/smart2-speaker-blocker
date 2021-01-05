@@ -11,7 +11,7 @@
     + [Privacy Mode](#total-privacy-mode-voice-activated)
     + [Time-based Keyword Mode](#time-based-keyword-mode)
     + ["Argument" Mode](#argument-mode)
-- [Test Data Summary](#testing-data-overview)
+- [Test Data Summary](#testing-data-summary)
 - [Additional Points](#additional-points) 
 
 ## Publication (Preprint)
