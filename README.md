@@ -1,5 +1,19 @@
 # Smart^2 Speaker Blocker
 
+##### Table of Contents  
+- [Publication](#publication-preprint)
+- [Project Goal](#project-goal)
+- [Design](#design)
+  * [Resources Used](#resources-used)
+- [Implementation](#implementation)
+  * [Smart^2 Usage Modes](#smart2-usage-modes)
+    + [Normal Mode](#normal-operationkeyword-evaluation-mode)
+    + [Privacy Mode](#total-privacy-mode-voice-activated)
+    + [Time-based Keyword Mode](#time-based-keyword-mode)
+    + ["Argument" Mode](#argument-mode)
+- [Test Data Summary](#testing-data-overview)
+- [Additional Points](#additional-points) 
+
 ## Publication (Preprint)
 
 ###### arXiv.org > Computer Science > Cryptography and Security
@@ -52,6 +66,49 @@ Privacy mode automatically activated when a preset decibel (dB) value is reached
 ##### Implementation diagram
 ![Smart^2 implementation](/img/fig2-components.png?raw=true "Smart^2 implementation diagram")
 > Fig. 3. Our test setup consists of the Smart2 along with a separate networked computer which records both the raw audio and the output from the Smart2. Both sets of audio recordings were transcribed using the online Google speech-to-text API, and compared.
+
+## Test Data Summary
+- Latency expressed in terms of %, e.g. 20 seconds (Alexa) / 2 seconds (Smart2) = 10% overhead increase.
+- Average of several runs taken.
+- Time recorded in milliseconds (timestamp in ms, e.g. 5000).
+- Future improvement to latency: Another thread for recording Alexa.
+
+![Smart^2 processing time](/img/proc-time-table.png?raw=true "Smart^2 processing time table")
+
+### Test 1: "How is the weather?"
+Alexa | Smart^2
+----- | -----
+ca. 1.8 - 2.10 s + 8 s for response | ca. 6.5 s
+
+Difference of ca. 4.40 - 4.70 s
+* 4.4 / 9.8 = 0.449
+* 4.7 / 10.1 = 0.4653
+
+> Smart2 adds 45%-46.5% overhead.
+
+### Test 2: "Play CNN news."
+Alexa | Smart^2
+----- | -----
+ca. 2.5-3.0 s until Alexa replies | ca. 6.45 s
+
+Difference of ca. 3.45 - 3.95 s
+
+### Test 3: "Tell me a joke."
+Alexa | Smart^2
+----- | -----
+ca. 1.7 s | ca. 6.8 s
+
+Difference of ca. 5.10 s
+
+### Test 4: "What's 5+5?"
+Alexa | Smart^2
+----- | -----
+3.68 s | 7.46 s
+
+Difference of ca. 3.78 s
+
+> The processing time of Smart2 is roughly 3-4 seconds. Roughly the same time Alexa needs to process a request and respond.
+> Potential to improve latency exists by recording Alexa in a concurrently running thread.
 
 ## Additional Points
 * Hardware vs. software mute buttons: software mute can be bypassed with malware (microphone appears to be deactivated but still sending data in the background).
